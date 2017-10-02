@@ -10,13 +10,13 @@ public enum JavaTokenType implements TokenType {
 	// Reserved words.
 	PACKAGE("package"), CLASS("class"), PUBLIC("public"), STATIC("static"),
 	// Special symbols.
-	ADD("+"), SUB("-"), MUL("*"), DIV("/"), BITAND("&"), BITOR("|"), MOD("%"), QUESTION(
+	ADD("+"), SUB("-"), MUL("*"), DIV("/"), BITAND("&"), BITOR("|"), MOD("%"), LSHIFT("<<"),RSHIFT(">>"),QUESTION(
 			"?"), ASSIGN("="), ADD_AASIGN("+="), SUB_ASSIGN("-="), MUL_ASSIGN(
 			"*="), DIV_ASSIGN("/="), AND_ASSIGN("&="), OR_ASSIGN("|="), XOR_ASSIGN(
 			"^="), MOD_ASSIGN("%="), LSHIFT_AASIGN("<<="), RSHIFT_ASSIGN(">>="), URSHIFT_ASSIGN(
 			">>>="), DOT("."), COMMA(","), SEMICOLON(";"), COLON(":"), QUOTE(
 			"'"), EQUALS("=="), NOT_EQUALS("!="), BANG("!"), AND("&&"), OR("||"), TILD(
-			"~"), INC("++"), LESS_THAN("<"), LESS_EQUALS("<="), GREATER_EQUALS(
+			"~"), INC("++"), DEC("--"),LESS_THAN("<"), LESS_EQUALS("<="), GREATER_EQUALS(
 			">="), GREATER_THAN(">"), LEFT_PAREN("("), RIGHT_PAREN(")"), LEFT_BRACKET(
 			"["), RIGHT_BRACKET("]"), LEFT_BRACE("{"), RIGHT_BRACE("}"), CARET(
 			"^"), DOT_DOT(".."),
