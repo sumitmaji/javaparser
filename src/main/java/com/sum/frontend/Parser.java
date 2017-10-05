@@ -59,7 +59,7 @@ public abstract class Parser implements MessageProducer {
 	 * 
 	 * @return the current token.
 	 */
-	public Token currentToken() {
+	public Token currentToken() throws Exception{
 		return scanner.currentToken();
 	}
 
@@ -73,6 +73,7 @@ public abstract class Parser implements MessageProducer {
 	public Token nextToken() throws Exception {
 		return scanner.nextToken();
 	}
+	
 
 	/**
 	 * Add a parser message listener.
@@ -119,6 +120,9 @@ public abstract class Parser implements MessageProducer {
 	public void setICode(ICode iCode) {
 		this.iCode = iCode;
 	}
-	
+
+    public Scanner getScanner(){
+        return this.scanner;
+    }	
 	
 }

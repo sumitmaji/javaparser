@@ -28,6 +28,10 @@ public class JavaParserTD extends Parser {
 	public JavaParserTD(Scanner scanner) {
 		super(scanner);
 	}
+	
+	public JavaParserTD(JavaParserTD parent){
+	    super(parent.getScanner());
+	}
 
 	protected static JavaErrorHandler errorHandler = new JavaErrorHandler();
 
@@ -60,6 +64,22 @@ public class JavaParserTD extends Parser {
 			errorHandler.abortTranslation(IO_ERROR, this);
 		}
 	}
+	
+		/**
+	 * Consume the token specified in the argument
+	 * 
+	 * @return the next token
+	 * @throws Exception
+	 *             if an error occurred.
+	 */
+	public Token consumeToken(TokenType type) throws Exception{
+	    if(currentToken().getType() == type){
+	        return nextToken(); //consume the token
+	    }else{
+			throw new Exception("Missing: "+type);
+	    }
+	}
+
 
 	/**
 	 * Return the number of syntax errors found by the parser.

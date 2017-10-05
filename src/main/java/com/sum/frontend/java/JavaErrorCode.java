@@ -1,7 +1,8 @@
 package com.sum.frontend.java;
 
 public enum JavaErrorCode {
-
+    
+    MISSING_PACKAGE("Missing package"),
 	ALREADY_FORWARDED("Already specified in FORWARD"), IDENTIFIER_REDEFINED(
 			"Redefined identifier"), IDENTIFIER_UNDEFINED(
 			"Undefined identifier"), INCOMPATIBLE_ASSIGNMENT(

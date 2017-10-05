@@ -25,7 +25,9 @@ public abstract class Scanner {
 	/**
 	 * @return the current token.
 	 */
-	public Token currentToken() {
+	public Token currentToken()  throws Exception{
+	    if(currentToken == null)
+	       nextToken();
 		return currentToken;
 	}
 
