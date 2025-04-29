@@ -30,12 +30,12 @@ components:
           value: /usr/lib/jvm/java-17-openjdk
         - name: MAVEN_OPTS
           value: "-Xmx1024m"
-  - name: vscode-java
-    plugin:
-      id: redhat/java/latest
-  - name: vscode-spring-boot
-    plugin:
-      id: pivotal.vscode-spring-boot/latest
+  # - name: vscode-java
+  #   plugin:
+  #     id: redhat/java/latest
+  # - name: vscode-spring-boot
+  #   plugin:
+  #     id: pivotal.vscode-spring-boot/latest
 commands:
   - id: build
     exec:
