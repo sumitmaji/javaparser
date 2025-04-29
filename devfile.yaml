@@ -61,8 +61,3 @@ commands:
       group:
         kind: test
         isDefault: true
-# projects:
-#   - name: java-springboot-app
-#     source:
-#       type: git
-#       location: "https://github.com/sumitmaji/javaparser.git"
