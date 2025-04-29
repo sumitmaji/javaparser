@@ -13,7 +13,7 @@ components:
     container:
       image: quay.io/eclipse/che-java17-maven:latest
       memoryLimit: 4Gi
-      cpuLimit: "3"
+      cpuLimit: 3000m
       mountSources: true
       command:
         - tail
