@@ -11,7 +11,7 @@ metadata:
 components:
   - name: tools
     container:
-      image: quay.io/eclipse/che-java17-maven:latest
+      image: quay.io/devfile/universal-developer-image:latest
       memoryLimit: 4Gi
       cpuLimit: 3000m
       mountSources: true
@@ -30,12 +30,6 @@ components:
           value: /usr/lib/jvm/java-17-openjdk
         - name: MAVEN_OPTS
           value: "-Xmx1024m"
-  - name: vscode-java
-    plugin:
-      id: redhat/java/latest
-  - name: vscode-spring-boot
-    plugin:
-      id: pivotal.vscode-spring-boot/latest
 commands:
   - id: build
     exec:
